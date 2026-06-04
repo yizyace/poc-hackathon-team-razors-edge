@@ -1,0 +1,10 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Local env / editor
+*.local
+.vite
+.DS_Store
