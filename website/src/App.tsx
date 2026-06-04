@@ -3,6 +3,7 @@ import HeroSection from './components/sections/HeroSection'
 import ProblemSection from './components/sections/ProblemSection'
 import AgentsSection from './components/sections/AgentsSection'
 import HowItWorksSection from './components/sections/HowItWorksSection'
+import LiveIntegrationSection from './components/sections/LiveIntegrationSection'
 import DemoRun1Section from './components/sections/DemoRun1Section'
 import DemoRun2Section from './components/sections/DemoRun2Section'
 import EvidenceSection from './components/sections/EvidenceSection'
@@ -16,6 +17,7 @@ const NAV_SECTIONS = [
   { id: 'problem', label: 'Problem' },
   { id: 'agents', label: 'Agents' },
   { id: 'how-it-works', label: 'Pipeline' },
+  { id: 'live-graph', label: 'Live' },
   { id: 'demo-run-1', label: 'Run 1' },
   { id: 'demo-run-2', label: 'Run 2' },
   { id: 'evidence', label: 'Evidence' },
@@ -33,6 +35,7 @@ export default function App() {
         <ProblemSection />
         <AgentsSection />
         <HowItWorksSection />
+        <LiveIntegrationSection />
         <DemoRun1Section />
         <DemoRun2Section />
         <EvidenceSection />
