@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal scaffold base. Industrial-terminal theme + utilities are added in B2. */
+@layer base {
+  html {
+    background-color: #0a0b0d;
+    color: #e8eaf0;
+  }
+}
