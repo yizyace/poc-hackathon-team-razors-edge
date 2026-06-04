@@ -15,6 +15,11 @@ The CONSTITUTION.md file contains all engineering rules and conventions that sho
 <!-- Add project-specific agent overrides below this line -->
 <!-- These overrides will be preserved during dd-dm pull operations -->
 
+## Team
+
+The hackathon team roster and member GitHub profiles live in
+[README.md](./README.md#team). Start there for team context in new sessions.
+
 ## Marketing / Presentation Site
 
 > **Scope guard:** This section is ONLY about the public demo/marketing
