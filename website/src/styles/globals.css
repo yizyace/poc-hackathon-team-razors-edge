@@ -2,10 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Minimal scaffold base. Industrial-terminal theme + utilities are added in B2. */
 @layer base {
   html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     background-color: #0a0b0d;
     color: #e8eaf0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Respect reduced-motion: drop snapping + smooth scroll entirely. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-snap-type: none;
+      scroll-behavior: auto;
+    }
+  }
+
+  /* Terminal-style selection */
+  ::selection {
+    background: rgba(245, 166, 35, 0.28);
+    color: #ffffff;
+  }
+
+  /* Thin dark scrollbar to match the deck */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0b0d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e2230;
+    border-radius: 6px;
+  }
+}
+
+@layer utilities {
+  /* Each scroll-snap "slide". 100svh handles iOS Safari's dynamic toolbar. */
+  .snap-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100svh;
+  }
+
+  /* Decorative CRT scanline overlay applied to the app root. */
+  .scanlines::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.08) 2px,
+      rgba(0, 0, 0, 0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scanlines::before {
+      display: none;
+    }
   }
 }
