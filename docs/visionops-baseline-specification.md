@@ -173,7 +173,7 @@ To protect the build window, we make a distinction between structural decisions 
 - The exact wording of the vision model prompt
 - The severity threshold value
 - The Slack alert message copy and formatting details
-- The choice of test images
+- The choice of test images — **resolved:** see [visionops-demo-test-images.md](./visionops-demo-test-images.md)
 - The mock ERP purchase order data
 
 ### Three Deliberate Blanks
@@ -182,7 +182,7 @@ We're intentionally leaving three decisions unmade in this strawman. The team wi
 
 1. **Slack alert copy:** The exact text and Block Kit layout of the manual review alert and the dispute filed notification.
 2. **Severity threshold:** The numeric cutoff between "low severity, file silently" and "high severity, fire Slack alert."
-3. **Test images:** Which specific photos we use for the crushed box (Run 1) and the scuffed box (Run 2).
+3. **Test images:** Which specific photos we use for the crushed box (Run 1) and the scuffed box (Run 2). **Resolved** — see [visionops-demo-test-images.md](./visionops-demo-test-images.md) (and `claude/design_specification.md` §9 for exact values).
 
 ### The 10-Minute Design Review (Minutes 0–10)
 
@@ -362,7 +362,7 @@ Before the sprint starts, share these things with the team:
 2. **The two questions to think about:**
    - "What breaks in your hands?" (What will fail when you try to build your component?)
    - "What's missing that would make this feel like ours, not one person's?" (What small addition would give you ownership?)
-3. **The three blanks reminder:** Slack alert copy, severity threshold, and test images will be decided together during the design review. Come with ideas.
+3. **The three blanks reminder:** Slack alert copy, severity threshold, and test images will be decided together during the design review. Come with ideas. (Test images are now specified — see [visionops-demo-test-images.md](./visionops-demo-test-images.md); confirm during the review.)
 
 ---
 

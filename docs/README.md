@@ -6,6 +6,7 @@ Not polished — cached here so it survives into this repo and stays searchable.
 ## Canonical
 
 - **[visionops-baseline-specification.md](./visionops-baseline-specification.md)** — baseline spec for the entire app idea (VisionOps: three-agent damaged-inventory pipeline). **Start here.**
+- **[visionops-demo-test-images.md](./visionops-demo-test-images.md)** — the two demo test images (Run 1 crushed box, Run 2 scuffed box) at a glance: what each looks like, why no training images are needed, and the no-barcode OCR + fallback read. Defers to `claude/design_specification.md` §9 for exact values.
 
 ## Rough handoffs (verbatim, timestamped)
 
