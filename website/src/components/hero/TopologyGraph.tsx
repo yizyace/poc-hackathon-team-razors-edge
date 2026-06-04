@@ -49,11 +49,9 @@ export default function TopologyGraph({ className }: TopologyGraphProps) {
   return (
     <svg
       viewBox="0 0 640 300"
-      width="100%"
-      height="auto"
       role="img"
       aria-label="Three-agent pipeline: Vision Inspector to Audit Core to Dispute Coordinator"
-      className={className}
+      className={'block h-auto w-full ' + (className ?? '')}
     >
       <defs>
         {/* Faint grid that fades toward the edges, plus a soft amber bloom. */}
