@@ -3,6 +3,10 @@
 Rough research captured for the Phinite × GMI Cloud (NY Tech Week) hackathon.
 Not polished — cached here so it survives into this repo and stays searchable.
 
+## Plain-language
+
+- **[visionops-pitch-eli5.md](./visionops-pitch-eli5.md)** — Start here if you want the no-jargon pitch.
+
 ## Canonical
 
 - **[visionops-baseline-specification.md](./visionops-baseline-specification.md)** — baseline spec for the entire app idea (VisionOps: three-agent damaged-inventory pipeline). **Start here.**
